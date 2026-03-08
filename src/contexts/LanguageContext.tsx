@@ -67,6 +67,8 @@ const translations = {
     "skills.soft.mentoring": "Mentorización",
     "skills.soft.scrum": "Metodología Scrum",
     
+    // Tech tags
+    "tech.microservices": "Microservicios",
     // Projects
     "projects.title": "Proyectos Personales",
     "projects.ecommerce.title": "E-Commerce Platform",
@@ -141,6 +143,8 @@ const translations = {
     "skills.soft.mentoring": "Mentoring",
     "skills.soft.scrum": "Scrum Methodology",
     
+    // Tech tags
+    "tech.microservices": "Microservices",
     // Projects
     "projects.title": "Personal Projects",
     "projects.ecommerce.title": "E-Commerce Platform",
