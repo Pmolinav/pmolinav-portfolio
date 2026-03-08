@@ -135,6 +135,13 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-2 md:hidden">
             <button
+              onClick={toggleTheme}
+              className="p-1.5 hover:opacity-80 transition-opacity"
+              aria-label="Toggle theme"
+            >
+              {isDark ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+            <button
               onClick={toggleLanguage}
               className="p-1.5 hover:opacity-80 transition-opacity"
               aria-label="Toggle language"
