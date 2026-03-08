@@ -23,8 +23,14 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("#inicio");
+  const [isDark, setIsDark] = useState(true);
   const menuRef = useRef<HTMLDivElement>(null);
   const { language, setLanguage, t } = useLanguage();
+
+  const toggleTheme = () => {
+    setIsDark(!isDark);
+    document.documentElement.classList.toggle("light");
+  };
 
   const navItems = [
     { labelKey: "nav.inicio", href: "#inicio" },
