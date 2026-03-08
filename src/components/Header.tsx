@@ -1,6 +1,23 @@
 import { useState, useEffect, useRef } from "react";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+
+const FlagES = () => (
+  <svg width="24" height="18" viewBox="0 0 24 18" className="rounded-sm">
+    <rect width="24" height="18" fill="#c60b1e"/>
+    <rect y="4.5" width="24" height="9" fill="#ffc400"/>
+  </svg>
+);
+
+const FlagEN = () => (
+  <svg width="24" height="18" viewBox="0 0 24 18" className="rounded-sm">
+    <rect width="24" height="18" fill="#012169"/>
+    <path d="M0,0 L24,18 M24,0 L0,18" stroke="#fff" strokeWidth="3"/>
+    <path d="M0,0 L24,18 M24,0 L0,18" stroke="#c8102e" strokeWidth="2"/>
+    <path d="M12,0 V18 M0,9 H24" stroke="#fff" strokeWidth="5"/>
+    <path d="M12,0 V18 M0,9 H24" stroke="#c8102e" strokeWidth="3"/>
+  </svg>
+);
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -93,11 +110,10 @@ const Header = () => {
             {/* Language Toggle */}
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary text-foreground text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="flex items-center gap-2 p-1.5 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
               aria-label="Toggle language"
             >
-              <Globe className="w-4 h-4" />
-              {language.toUpperCase()}
+              {language === "es" ? <FlagES /> : <FlagEN />}
             </button>
           </nav>
 
@@ -105,10 +121,10 @@ const Header = () => {
           <div className="flex items-center gap-2 md:hidden">
             <button
               onClick={toggleLanguage}
-              className="p-2 text-foreground hover:text-primary transition-colors"
+              className="p-1.5 hover:opacity-80 transition-opacity"
               aria-label="Toggle language"
             >
-              <Globe size={20} />
+              {language === "es" ? <FlagES /> : <FlagEN />}
             </button>
             <button
               className="p-2 text-foreground hover:text-primary transition-colors"
