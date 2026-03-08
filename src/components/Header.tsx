@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
@@ -14,6 +14,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("#inicio");
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,6 +37,22 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
   const handleNavClick = () => {
     setIsMenuOpen(false);
   };
@@ -46,7 +63,7 @@ const Header = () => {
         isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-4" ref={menuRef}>
         <div className="flex items-center justify-between">
           <a href="#inicio" className="text-xl font-semibold text-gradient" style={{ fontFamily: "var(--font-display)" }}>
             Portfolio
