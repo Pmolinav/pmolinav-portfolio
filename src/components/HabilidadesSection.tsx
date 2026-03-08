@@ -1,8 +1,8 @@
 const habilidades = {
-  frontend: ["React", "Vue.js", "TypeScript", "Tailwind CSS", "Next.js", "HTML5/CSS3"],
-  backend: ["Node.js", "Python", "Express", "PostgreSQL", "MongoDB", "REST APIs"],
-  herramientas: ["Git", "Docker", "AWS", "Figma", "Jest", "CI/CD"],
-  soft: ["Trabajo en equipo", "Comunicación", "Resolución de problemas", "Metodologías ágiles"],
+  backend: ["Java", "API REST", "Microservicios", ".NET C#", "Hibernate", "PostgreSQL", "Oracle SQL"],
+  devops: ["Docker", "Kubernetes", "Jenkins", "AWS", "Kafka", "Redis", "Git"],
+  herramientas: ["Kibana", "Swagger", "Postman", "JMeter", "Jira", "Confluence"],
+  soft: ["Trabajo en equipo", "Contacto con clientes", "Documentación", "Mentorización", "Metodología Scrum"],
 };
 
 const HabilidadesSection = () => {
