@@ -1,6 +1,23 @@
 import { useState, useEffect, useRef } from "react";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+
+const FlagES = () => (
+  <svg width="24" height="18" viewBox="0 0 24 18" className="rounded-sm">
+    <rect width="24" height="18" fill="#c60b1e"/>
+    <rect y="4.5" width="24" height="9" fill="#ffc400"/>
+  </svg>
+);
+
+const FlagEN = () => (
+  <svg width="24" height="18" viewBox="0 0 24 18" className="rounded-sm">
+    <rect width="24" height="18" fill="#012169"/>
+    <path d="M0,0 L24,18 M24,0 L0,18" stroke="#fff" strokeWidth="3"/>
+    <path d="M0,0 L24,18 M24,0 L0,18" stroke="#c8102e" strokeWidth="2"/>
+    <path d="M12,0 V18 M0,9 H24" stroke="#fff" strokeWidth="5"/>
+    <path d="M12,0 V18 M0,9 H24" stroke="#c8102e" strokeWidth="3"/>
+  </svg>
+);
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
