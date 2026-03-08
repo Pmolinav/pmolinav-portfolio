@@ -56,6 +56,8 @@ const ProyectosSection = () => {
                 <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                   <a
                     href={proyecto.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 bg-card rounded-full text-foreground hover:text-primary transition-colors"
                     aria-label="Ver código en GitHub"
                   >
@@ -63,8 +65,10 @@ const ProyectosSection = () => {
                   </a>
                   <a
                     href={proyecto.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 bg-card rounded-full text-foreground hover:text-primary transition-colors"
-                    aria-label="Ver demo"
+                    aria-label="Ver proyecto"
                   >
                     <ExternalLink className="w-6 h-6" />
                   </a>

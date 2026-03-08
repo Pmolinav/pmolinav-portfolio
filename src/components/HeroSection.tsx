@@ -32,11 +32,11 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up animation-delay-400">
             <a
-              href="#proyectos"
+              href="#trabajos"
               className="px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105"
               style={{ background: "var(--gradient-primary)", color: "hsl(var(--primary-foreground))" }}
             >
-              Ver proyectos
+              Mi experiencia
             </a>
             <a
               href="#contacto"
