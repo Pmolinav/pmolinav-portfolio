@@ -14,14 +14,14 @@ const ContactoSection = () => {
           
           <div className="flex justify-center gap-6">
             <a
-              href="mailto:tuemail@gmail.com"
+              href="mailto:pablo7molina97@gmail.com"
               className="icon-social"
               aria-label="Enviar email"
             >
               <Mail className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/tuperfil"
+              href="https://linkedin.com/in/pablo-molina-villar"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-social"
@@ -30,7 +30,7 @@ const ContactoSection = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="https://github.com/tuusuario"
+              href="https://github.com/pmolinav"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-social"
@@ -42,7 +42,7 @@ const ContactoSection = () => {
 
           <div className="mt-16 pt-8 border-t border-border">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Tu Nombre. Todos los derechos reservados.
+              © {new Date().getFullYear()} Pablo Molina Villar. Todos los derechos reservados.
             </p>
           </div>
         </div>
