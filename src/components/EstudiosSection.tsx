@@ -6,6 +6,12 @@ const EstudiosSection = () => {
 
   const estudios = [
     {
+      titulo: t("studies.master.title"),
+      institucion: t("studies.master.institution"),
+      periodo: t("studies.master.period"),
+      descripcion: t("studies.master.description"),
+    },
+    {
       titulo: t("studies.degree.title"),
       institucion: t("studies.degree.institution"),
       periodo: t("studies.degree.period"),
