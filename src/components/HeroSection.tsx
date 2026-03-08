@@ -31,7 +31,11 @@ const HeroSection = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
+          {/* Profile photo placeholder */}
+          <div className="w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-primary/30 bg-secondary/50 flex items-center justify-center mb-8 animate-fade-up overflow-hidden">
+            <span className="text-muted-foreground text-sm">Tu foto</span>
+          </div>
           <p className="text-primary font-medium mb-4 animate-fade-up">
             {t("hero.greeting")}
           </p>
