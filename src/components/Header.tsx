@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const FlagES = () => (
@@ -23,8 +23,14 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("#inicio");
+  const [isDark, setIsDark] = useState(true);
   const menuRef = useRef<HTMLDivElement>(null);
   const { language, setLanguage, t } = useLanguage();
+
+  const toggleTheme = () => {
+    setIsDark(!isDark);
+    document.documentElement.classList.toggle("light");
+  };
 
   const navItems = [
     { labelKey: "nav.inicio", href: "#inicio" },
@@ -107,6 +113,15 @@ const Header = () => {
               </a>
             ))}
             
+            {/* Theme Toggle */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
+              aria-label="Toggle theme"
+            >
+              {isDark ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
+
             {/* Language Toggle */}
             <button
               onClick={toggleLanguage}
@@ -119,6 +134,13 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-2 md:hidden">
+            <button
+              onClick={toggleTheme}
+              className="p-1.5 hover:opacity-80 transition-opacity"
+              aria-label="Toggle theme"
+            >
+              {isDark ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
             <button
               onClick={toggleLanguage}
               className="p-1.5 hover:opacity-80 transition-opacity"
