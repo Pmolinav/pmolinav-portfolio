@@ -1,4 +1,5 @@
 import { useLanguage } from "@/contexts/LanguageContext";
+import profilePhoto from "@/assets/profile-photo.png";
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -31,36 +32,51 @@ const HeroSection = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-primary font-medium mb-4 animate-fade-up">
-            {t("hero.greeting")}
-          </p>
-          <h1
-            className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-fade-up animation-delay-200"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            Pablo Molina Villar
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-gradient font-semibold mb-8 animate-fade-up animation-delay-400">
-            {t("hero.role")}
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10 animate-fade-up animation-delay-400">
-            {t("hero.description")}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up animation-delay-400">
-            <a
-              href="#trabajos"
-              className="px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105"
-              style={{ background: "var(--gradient-primary)", color: "hsl(var(--primary-foreground))" }}
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-14 max-w-5xl mx-auto">
+          
+          {/* Photo - left on desktop, top on mobile */}
+          <div className="shrink-0 order-first">
+            <div className="w-28 h-28 md:w-48 md:h-48 rounded-full overflow-hidden ring-4 ring-primary/20 shadow-lg">
+              <img
+                src={profilePhoto}
+                alt="Pablo Molina Villar"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Text content */}
+          <div className="text-center md:text-left">
+            <p className="text-primary font-medium mb-4 animate-fade-up">
+              {t("hero.greeting")}
+            </p>
+            <h1
+              className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-up animation-delay-200"
+              style={{ fontFamily: "var(--font-display)" }}
             >
-              {t("hero.experience")}
-            </a>
-            <a
-              href="#contacto"
-              className="px-8 py-3 rounded-lg border border-border text-foreground font-medium hover:bg-secondary transition-all duration-300"
-            >
-              {t("hero.contact")}
-            </a>
+              Pablo Molina Villar
+            </h1>
+            <h2 className="text-xl md:text-2xl lg:text-3xl text-gradient font-semibold mb-8 animate-fade-up animation-delay-400">
+              {t("hero.role")}
+            </h2>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-10 animate-fade-up animation-delay-400">
+              {t("hero.description")}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-up animation-delay-400">
+              <a
+                href="#trabajos"
+                className="px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105"
+                style={{ background: "var(--gradient-primary)", color: "hsl(var(--primary-foreground))" }}
+              >
+                {t("hero.experience")}
+              </a>
+              <a
+                href="#contacto"
+                className="px-8 py-3 rounded-lg border border-border text-foreground font-medium hover:bg-secondary transition-all duration-300"
+              >
+                {t("hero.contact")}
+              </a>
+            </div>
           </div>
         </div>
       </div>
