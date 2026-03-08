@@ -1,4 +1,8 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const HeroSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section
       id="inicio"
@@ -14,7 +18,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-primary font-medium mb-4 animate-fade-up">
-            ¡Hola! Soy
+            {t("hero.greeting")}
           </p>
           <h1
             className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-fade-up animation-delay-200"
@@ -23,11 +27,10 @@ const HeroSection = () => {
             Pablo Molina Villar
           </h1>
           <h2 className="text-2xl md:text-3xl text-gradient font-semibold mb-8 animate-fade-up animation-delay-400">
-            Software Engineer
+            {t("hero.role")}
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10 animate-fade-up animation-delay-400">
-            Desarrollador Backend con más de 5 años de experiencia en Java, microservicios y arquitecturas cloud. 
-            Especializado en desarrollo de sistemas escalables, APIs REST y tecnologías AWS, Docker y Kubernetes.
+            {t("hero.description")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up animation-delay-400">
             <a
@@ -35,13 +38,13 @@ const HeroSection = () => {
               className="px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105"
               style={{ background: "var(--gradient-primary)", color: "hsl(var(--primary-foreground))" }}
             >
-              Mi experiencia
+              {t("hero.experience")}
             </a>
             <a
               href="#contacto"
               className="px-8 py-3 rounded-lg border border-border text-foreground font-medium hover:bg-secondary transition-all duration-300"
             >
-              Contactar
+              {t("hero.contact")}
             </a>
           </div>
         </div>

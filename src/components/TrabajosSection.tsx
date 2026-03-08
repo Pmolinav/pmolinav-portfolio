@@ -1,34 +1,37 @@
 import { Briefcase } from "lucide-react";
-
-const trabajos = [
-  {
-    puesto: "Desarrollador Java Backend",
-    empresa: "Orenes CORE (anteriormente R.Franco Digital)",
-    periodo: "Junio 2022 - Actualidad",
-    descripcion: "Desarrollo de un servidor de juegos basado en arquitectura de microservicios con Java 21 y API REST. Implementación de nuevas funcionalidades, integraciones con externos, pruebas de rendimiento, mejoras de escalabilidad, revisiones de código, testing continuo y soporte. Aplicación desplegada en AWS, contenerizada con Docker y Kubernetes, CI/CD con Jenkins.",
-    tecnologias: ["Java", "Go", "API REST", "Microservicios", "Docker", "Kubernetes", "AWS", "Jenkins", "Kafka", "Redis"],
-  },
-  {
-    puesto: "Desarrollador Java y .NET",
-    empresa: "Indra",
-    periodo: "Octubre 2019 - Junio 2022",
-    descripcion: "Desarrollo de nuevas funcionalidades con Java 8 usando Oracle SQL, EJBs, Weblogic, tecnologías AWS (Redshift, S3). Desarrollo y mantenimiento de la aplicación de trading Allegro en .NET Framework 4.5.",
-    tecnologias: ["Java", ".NET C#", "Oracle SQL", "AWS Redshift", "AWS S3", "Weblogic"],
-  },
-  {
-    puesto: "Prácticas y Beca UCLM",
-    empresa: "Universidad de Castilla La Mancha",
-    periodo: "Junio 2018 - Febrero 2019",
-    descripcion: "Desarrollo de una aplicación con Android Studio. Creación de una web WordPress y servidor PHP con base de datos MySQL.",
-    tecnologias: ["Android Studio", "WordPress", "PHP", "MySQL"],
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const TrabajosSection = () => {
+  const { t } = useLanguage();
+
+  const trabajos = [
+    {
+      puesto: t("work.orenes.position"),
+      empresa: t("work.orenes.company"),
+      periodo: t("work.orenes.period"),
+      descripcion: t("work.orenes.description"),
+      tecnologias: ["Java", "Go", "API REST", "Microservicios", "Docker", "Kubernetes", "AWS", "Jenkins", "Kafka", "Redis"],
+    },
+    {
+      puesto: t("work.indra.position"),
+      empresa: t("work.indra.company"),
+      periodo: t("work.indra.period"),
+      descripcion: t("work.indra.description"),
+      tecnologias: ["Java", ".NET C#", "Oracle SQL", "AWS Redshift", "AWS S3", "Weblogic"],
+    },
+    {
+      puesto: t("work.uclm.position"),
+      empresa: t("work.uclm.company"),
+      periodo: t("work.uclm.period"),
+      descripcion: t("work.uclm.description"),
+      tecnologias: ["Android Studio", "WordPress", "PHP", "MySQL"],
+    },
+  ];
+
   return (
     <section id="trabajos" className="py-20 md:py-32 bg-card/50">
       <div className="container mx-auto px-6">
-        <h2 className="section-title">Experiencia Laboral</h2>
+        <h2 className="section-title">{t("work.title")}</h2>
         
         <div className="grid gap-6">
           {trabajos.map((trabajo, index) => (
