@@ -20,10 +20,10 @@ const HeroSection = () => {
             className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-fade-up animation-delay-200"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Tu Nombre Completo
+            Pablo Molina Villar
           </h1>
           <h2 className="text-2xl md:text-3xl text-gradient font-semibold mb-8 animate-fade-up animation-delay-400">
-            Desarrollador Full Stack
+            Software Engineer
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10 animate-fade-up animation-delay-400">
             Apasionado por crear experiencias digitales únicas y funcionales. 
