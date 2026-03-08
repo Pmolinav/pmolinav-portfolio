@@ -1,31 +1,34 @@
 import { GraduationCap } from "lucide-react";
-
-const estudios = [
-  {
-    titulo: "Grado en Ingeniería Informática",
-    institucion: "Universidad de Castilla La Mancha (UCLM), Albacete",
-    periodo: "2015 - 2019",
-    descripcion: "Formación integral en desarrollo de software, sistemas y arquitecturas informáticas.",
-  },
-  {
-    titulo: "Trabajo Final de Grado",
-    institucion: "UCLM",
-    periodo: "2019",
-    descripcion: "Elaboración de un juego serio con modalidad multijugador creado con Unity 3D (C#). Nota: 9.5.",
-  },
-  {
-    titulo: "Secundaria y Bachillerato",
-    institucion: "I.E.S Ramón Giraldo, Villanueva de los Infantes (Ciudad Real)",
-    periodo: "2009 - 2015",
-    descripcion: "Educación secundaria y bachillerato tecnológico.",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const EstudiosSection = () => {
+  const { t } = useLanguage();
+
+  const estudios = [
+    {
+      titulo: t("studies.degree.title"),
+      institucion: t("studies.degree.institution"),
+      periodo: t("studies.degree.period"),
+      descripcion: t("studies.degree.description"),
+    },
+    {
+      titulo: t("studies.tfg.title"),
+      institucion: t("studies.tfg.institution"),
+      periodo: t("studies.tfg.period"),
+      descripcion: t("studies.tfg.description"),
+    },
+    {
+      titulo: t("studies.secondary.title"),
+      institucion: t("studies.secondary.institution"),
+      periodo: t("studies.secondary.period"),
+      descripcion: t("studies.secondary.description"),
+    },
+  ];
+
   return (
     <section id="estudios" className="py-20 md:py-32">
       <div className="container mx-auto px-6">
-        <h2 className="section-title">Estudios</h2>
+        <h2 className="section-title">{t("studies.title")}</h2>
         
         <div className="relative">
           {/* Timeline line */}

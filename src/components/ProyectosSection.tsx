@@ -1,45 +1,48 @@
 import { ExternalLink, Github } from "lucide-react";
-
-const proyectos = [
-  {
-    titulo: "E-Commerce Platform",
-    descripcion: "Plataforma de comercio electrónico completa con carrito de compras, pasarela de pagos y panel de administración.",
-    imagen: "/placeholder.svg",
-    tecnologias: ["React", "Node.js", "MongoDB", "Stripe"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    titulo: "Task Management App",
-    descripcion: "Aplicación de gestión de tareas con funcionalidades de colaboración en tiempo real y notificaciones.",
-    imagen: "/placeholder.svg",
-    tecnologias: ["Vue.js", "Firebase", "Tailwind CSS"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    titulo: "Weather Dashboard",
-    descripcion: "Dashboard interactivo que muestra información meteorológica con visualizaciones de datos avanzadas.",
-    imagen: "/placeholder.svg",
-    tecnologias: ["React", "D3.js", "OpenWeather API"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    titulo: "Portfolio Generator",
-    descripcion: "Herramienta para crear portfolios profesionales de forma rápida y sencilla con plantillas personalizables.",
-    imagen: "/placeholder.svg",
-    tecnologias: ["Next.js", "TypeScript", "PostgreSQL"],
-    github: "#",
-    demo: "#",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ProyectosSection = () => {
+  const { t } = useLanguage();
+
+  const proyectos = [
+    {
+      titulo: t("projects.ecommerce.title"),
+      descripcion: t("projects.ecommerce.description"),
+      imagen: "/placeholder.svg",
+      tecnologias: ["React", "Node.js", "MongoDB", "Stripe"],
+      github: "#",
+      demo: "#",
+    },
+    {
+      titulo: t("projects.tasks.title"),
+      descripcion: t("projects.tasks.description"),
+      imagen: "/placeholder.svg",
+      tecnologias: ["Vue.js", "Firebase", "Tailwind CSS"],
+      github: "#",
+      demo: "#",
+    },
+    {
+      titulo: t("projects.weather.title"),
+      descripcion: t("projects.weather.description"),
+      imagen: "/placeholder.svg",
+      tecnologias: ["React", "D3.js", "OpenWeather API"],
+      github: "#",
+      demo: "#",
+    },
+    {
+      titulo: t("projects.portfolio.title"),
+      descripcion: t("projects.portfolio.description"),
+      imagen: "/placeholder.svg",
+      tecnologias: ["Next.js", "TypeScript", "PostgreSQL"],
+      github: "#",
+      demo: "#",
+    },
+  ];
+
   return (
     <section id="proyectos" className="py-20 md:py-32 bg-card/50">
       <div className="container mx-auto px-6">
-        <h2 className="section-title">Proyectos Personales</h2>
+        <h2 className="section-title">{t("projects.title")}</h2>
         
         <div className="grid md:grid-cols-2 gap-6">
           {proyectos.map((proyecto, index) => (
