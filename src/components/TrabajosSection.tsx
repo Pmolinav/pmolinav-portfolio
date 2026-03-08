@@ -5,8 +5,8 @@ const trabajos = [
     puesto: "Desarrollador Java Backend",
     empresa: "Orenes CORE (anteriormente R.Franco Digital)",
     periodo: "Junio 2022 - Actualidad",
-    descripcion: "Desarrollo de un servidor de juegos basado en arquitectura de microservicios con Java 13 y API REST. Implementación de nuevas funcionalidades, integraciones con externos, pruebas de rendimiento, mejoras de escalabilidad, revisiones de código, testing continuo y soporte. Aplicación desplegada en AWS, contenerizada con Docker y Kubernetes, CI/CD con Jenkins.",
-    tecnologias: ["Java", "API REST", "Microservicios", "Docker", "Kubernetes", "AWS", "Jenkins", "Kafka", "Redis"],
+    descripcion: "Desarrollo de un servidor de juegos basado en arquitectura de microservicios con Java 21 y API REST. Implementación de nuevas funcionalidades, integraciones con externos, pruebas de rendimiento, mejoras de escalabilidad, revisiones de código, testing continuo y soporte. Aplicación desplegada en AWS, contenerizada con Docker y Kubernetes, CI/CD con Jenkins.",
+    tecnologias: ["Java", "Go", "API REST", "Microservicios", "Docker", "Kubernetes", "AWS", "Jenkins", "Kafka", "Redis"],
   },
   {
     puesto: "Desarrollador Java y .NET",
