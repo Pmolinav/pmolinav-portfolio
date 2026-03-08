@@ -121,10 +121,10 @@ const Header = () => {
           <div className="flex items-center gap-2 md:hidden">
             <button
               onClick={toggleLanguage}
-              className="p-2 text-foreground hover:text-primary transition-colors"
+              className="p-1.5 hover:opacity-80 transition-opacity"
               aria-label="Toggle language"
             >
-              <Globe size={20} />
+              {language === "es" ? <FlagES /> : <FlagEN />}
             </button>
             <button
               className="p-2 text-foreground hover:text-primary transition-colors"
