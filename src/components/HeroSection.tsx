@@ -31,40 +31,54 @@ const HeroSection = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-          {/* Profile photo placeholder */}
-          <div className="w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-primary/30 bg-secondary/50 flex items-center justify-center mb-8 animate-fade-up overflow-hidden">
-            <span className="text-muted-foreground text-sm">Tu foto</span>
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          {/* Text content */}
+          <div className="flex-1 text-center md:text-left order-2 md:order-1">
+            <p className="text-primary font-medium mb-4 animate-fade-up">
+              {t("hero.greeting")}
+            </p>
+            <h1
+              className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-up animation-delay-200"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              Pablo Molina Villar
+            </h1>
+            <h2 className="text-2xl md:text-3xl text-gradient font-semibold mb-8 animate-fade-up animation-delay-400">
+              {t("hero.role")}
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-10 animate-fade-up animation-delay-400">
+              {t("hero.description")}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-up animation-delay-400">
+              <a
+                href="#trabajos"
+                className="px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105"
+                style={{ background: "var(--gradient-primary)", color: "hsl(var(--primary-foreground))" }}
+              >
+                {t("hero.experience")}
+              </a>
+              <a
+                href="#contacto"
+                className="px-8 py-3 rounded-lg border border-border text-foreground font-medium hover:bg-secondary transition-all duration-300"
+              >
+                {t("hero.contact")}
+              </a>
+            </div>
           </div>
-          <p className="text-primary font-medium mb-4 animate-fade-up">
-            {t("hero.greeting")}
-          </p>
-          <h1
-            className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-fade-up animation-delay-200"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            Pablo Molina Villar
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-gradient font-semibold mb-8 animate-fade-up animation-delay-400">
-            {t("hero.role")}
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10 animate-fade-up animation-delay-400">
-            {t("hero.description")}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up animation-delay-400">
-            <a
-              href="#trabajos"
-              className="px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105"
-              style={{ background: "var(--gradient-primary)", color: "hsl(var(--primary-foreground))" }}
-            >
-              {t("hero.experience")}
-            </a>
-            <a
-              href="#contacto"
-              className="px-8 py-3 rounded-lg border border-border text-foreground font-medium hover:bg-secondary transition-all duration-300"
-            >
-              {t("hero.contact")}
-            </a>
+
+          {/* Profile photo */}
+          <div className="order-1 md:order-2 flex-shrink-0 animate-fade-up">
+            <div className="relative">
+              <div className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-2xl overflow-hidden border-2 border-primary/20 shadow-lg" style={{ boxShadow: "var(--shadow-glow)" }}>
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                  alt="Pablo Molina Villar"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Decorative accent */}
+              <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border-2 border-primary/10 -z-10" />
+            </div>
           </div>
         </div>
       </div>
