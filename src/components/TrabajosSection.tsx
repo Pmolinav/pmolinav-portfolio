@@ -2,25 +2,25 @@ import { Briefcase } from "lucide-react";
 
 const trabajos = [
   {
-    puesto: "Desarrollador Full Stack Senior",
-    empresa: "Tech Company",
-    periodo: "2023 - Presente",
-    descripcion: "Liderando el desarrollo de aplicaciones web escalables con React, Node.js y AWS. Mentorización de desarrolladores junior.",
-    tecnologias: ["React", "Node.js", "TypeScript", "AWS"],
+    puesto: "Desarrollador Java Backend",
+    empresa: "Orenes CORE (anteriormente R.Franco Digital)",
+    periodo: "Junio 2022 - Actualidad",
+    descripcion: "Desarrollo de un servidor de juegos basado en arquitectura de microservicios con Java 13 y API REST. Implementación de nuevas funcionalidades, integraciones con externos, pruebas de rendimiento, mejoras de escalabilidad, revisiones de código, testing continuo y soporte. Aplicación desplegada en AWS, contenerizada con Docker y Kubernetes, CI/CD con Jenkins.",
+    tecnologias: ["Java", "API REST", "Microservicios", "Docker", "Kubernetes", "AWS", "Jenkins", "Kafka", "Redis"],
   },
   {
-    puesto: "Desarrollador Frontend",
-    empresa: "Startup Digital",
-    periodo: "2021 - 2023",
-    descripcion: "Desarrollo de interfaces de usuario modernas y responsivas. Implementación de sistemas de diseño y optimización de rendimiento.",
-    tecnologias: ["Vue.js", "Tailwind CSS", "GraphQL"],
+    puesto: "Desarrollador Java y .NET",
+    empresa: "Indra",
+    periodo: "Octubre 2019 - Junio 2022",
+    descripcion: "Desarrollo de nuevas funcionalidades con Java 8 usando Oracle SQL, EJBs, Weblogic, tecnologías AWS (Redshift, S3). Desarrollo y mantenimiento de la aplicación de trading Allegro en .NET Framework 4.5.",
+    tecnologias: ["Java", ".NET C#", "Oracle SQL", "AWS Redshift", "AWS S3", "Weblogic"],
   },
   {
-    puesto: "Desarrollador Web Junior",
-    empresa: "Agencia Creativa",
-    periodo: "2020 - 2021",
-    descripcion: "Creación de sitios web corporativos y e-commerce. Colaboración con equipos de diseño para implementar experiencias de usuario.",
-    tecnologias: ["HTML", "CSS", "JavaScript", "WordPress"],
+    puesto: "Prácticas y Beca UCLM",
+    empresa: "Universidad de Castilla La Mancha",
+    periodo: "Junio 2018 - Febrero 2019",
+    descripcion: "Desarrollo de una aplicación con Android Studio. Creación de una web WordPress y servidor PHP con base de datos MySQL.",
+    tecnologias: ["Android Studio", "WordPress", "PHP", "MySQL"],
   },
 ];
 

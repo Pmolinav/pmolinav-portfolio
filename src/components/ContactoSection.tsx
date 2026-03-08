@@ -21,7 +21,7 @@ const ContactoSection = () => {
               <Mail className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/pablo-molina-villar"
+              href="https://linkedin.com/in/pablo-molina-villar-52323a179"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-social"

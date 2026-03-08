@@ -15,10 +15,27 @@ const HabilidadesSection = () => {
           <div className="bg-card p-6 md:p-8 rounded-xl card-hover">
             <h3 className="text-xl font-semibold text-foreground mb-6 flex items-center gap-3" style={{ fontFamily: "var(--font-display)" }}>
               <span className="w-2 h-2 rounded-full bg-primary" />
-              Frontend
+              Backend
             </h3>
             <div className="flex flex-wrap gap-3">
-              {habilidades.frontend.map((skill) => (
+              {habilidades.backend.map((skill) => (
+                <span
+                  key={skill}
+                  className="px-4 py-2 bg-secondary text-foreground rounded-lg text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors duration-300 cursor-default"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-card p-6 md:p-8 rounded-xl card-hover">
+            <h3 className="text-xl font-semibold text-foreground mb-6 flex items-center gap-3" style={{ fontFamily: "var(--font-display)" }}>
+              <span className="w-2 h-2 rounded-full bg-primary" />
+              DevOps & Cloud
+            </h3>
+            <div className="flex flex-wrap gap-3">
+              {habilidades.devops.map((skill) => (
                 <span
                   key={skill}
                   className="px-4 py-2 bg-secondary text-foreground rounded-lg text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors duration-300 cursor-default"
