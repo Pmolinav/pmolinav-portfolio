@@ -11,9 +11,24 @@ const HeroSection = () => {
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/30" />
       
-      {/* Decorative elements */}
-      <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-primary/3 rounded-full blur-3xl" />
+      {/* Code pattern background */}
+      <div className="absolute inset-0 opacity-[0.04] text-primary font-mono text-sm leading-relaxed overflow-hidden select-none pointer-events-none" aria-hidden="true">
+        <div className="absolute top-[5%] left-[3%] rotate-[-8deg]">{'const dev = () => {'}</div>
+        <div className="absolute top-[12%] right-[8%] rotate-[5deg]">{'import React from "react";'}</div>
+        <div className="absolute top-[22%] left-[15%] rotate-[3deg]">{'function buildApp() {'}</div>
+        <div className="absolute top-[30%] right-[20%] rotate-[-4deg]">{'<Component props={data} />'}</div>
+        <div className="absolute top-[40%] left-[5%] rotate-[6deg]">{'npm run deploy'}</div>
+        <div className="absolute top-[50%] right-[5%] rotate-[-3deg]">{'git commit -m "feat"'}</div>
+        <div className="absolute top-[60%] left-[25%] rotate-[-6deg]">{'export default App;'}</div>
+        <div className="absolute top-[70%] right-[15%] rotate-[4deg]">{'const [state, setState]'}</div>
+        <div className="absolute top-[78%] left-[8%] rotate-[2deg]">{'async fetchData() {'}</div>
+        <div className="absolute top-[88%] right-[10%] rotate-[-5deg]">{'return <div>...</div>'}</div>
+      </div>
+
+      {/* Decorative glows */}
+      <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-primary/8 rounded-full blur-[100px]" />
+      <div className="absolute bottom-1/3 left-1/5 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/3 rounded-full blur-[150px]" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
@@ -50,12 +65,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-primary rounded-full" />
-        </div>
-      </div>
     </section>
   );
 };
