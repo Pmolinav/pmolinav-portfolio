@@ -10,7 +10,7 @@ const TrabajosSection = () => {
       empresa: t("work.orenes.company"),
       periodo: t("work.orenes.period"),
       descripcion: t("work.orenes.description"),
-      tecnologias: ["Java", "Go", "API REST", "Microservicios", "Docker", "Kubernetes", "AWS", "Jenkins", "Kafka", "Redis"],
+      tecnologias: ["Java", "Go", "API REST", t("tech.microservices"), "Docker", "Kubernetes", "AWS", "Jenkins", "Kafka", "Redis"],
     },
     {
       puesto: t("work.indra.position"),

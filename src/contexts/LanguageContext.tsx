@@ -143,6 +143,8 @@ const translations = {
     "skills.soft.mentoring": "Mentoring",
     "skills.soft.scrum": "Scrum Methodology",
     
+    // Tech tags
+    "tech.microservices": "Microservices",
     // Projects
     "projects.title": "Personal Projects",
     "projects.ecommerce.title": "E-Commerce Platform",

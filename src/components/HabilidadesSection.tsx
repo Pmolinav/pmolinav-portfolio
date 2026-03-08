@@ -4,7 +4,7 @@ const HabilidadesSection = () => {
   const { t } = useLanguage();
 
   const habilidades = {
-    backend: ["Java", "Go", "API REST", "Microservicios", ".NET C#", "Hibernate", "PostgreSQL", "Oracle SQL"],
+    backend: ["Java", "Go", "API REST", t("tech.microservices"), ".NET C#", "Hibernate", "PostgreSQL", "Oracle SQL"],
     devops: ["Docker", "Kubernetes", "Jenkins", "AWS", "Kafka", "Redis", "Git"],
     herramientas: ["Kibana", "Swagger", "Postman", "JMeter", "Jira", "Confluence"],
     soft: [
