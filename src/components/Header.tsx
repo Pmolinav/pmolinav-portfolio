@@ -110,11 +110,10 @@ const Header = () => {
             {/* Language Toggle */}
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary text-foreground text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="flex items-center gap-2 p-1.5 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
               aria-label="Toggle language"
             >
-              <Globe className="w-4 h-4" />
-              {language.toUpperCase()}
+              {language === "es" ? <FlagES /> : <FlagEN />}
             </button>
           </nav>
 
