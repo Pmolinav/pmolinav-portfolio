@@ -3,21 +3,21 @@ import { GraduationCap } from "lucide-react";
 const estudios = [
   {
     titulo: "Grado en Ingeniería Informática",
-    institucion: "Universidad Ejemplo",
-    periodo: "2018 - 2022",
-    descripcion: "Especialización en desarrollo de software y sistemas distribuidos.",
+    institucion: "Universidad de Castilla La Mancha (UCLM), Albacete",
+    periodo: "2015 - 2019",
+    descripcion: "Formación integral en desarrollo de software, sistemas y arquitecturas informáticas.",
   },
   {
-    titulo: "Máster en Desarrollo Web",
-    institucion: "Escuela de Tecnología",
-    periodo: "2022 - 2023",
-    descripcion: "Formación avanzada en tecnologías web modernas y metodologías ágiles.",
+    titulo: "Trabajo Final de Grado",
+    institucion: "UCLM",
+    periodo: "2019",
+    descripcion: "Elaboración de un juego serio con modalidad multijugador creado con Unity 3D (C#). Nota: 9.5.",
   },
   {
-    titulo: "Certificación AWS Cloud Practitioner",
-    institucion: "Amazon Web Services",
-    periodo: "2023",
-    descripcion: "Fundamentos de computación en la nube y servicios AWS.",
+    titulo: "Secundaria y Bachillerato",
+    institucion: "I.E.S Ramón Giraldo, Villanueva de los Infantes (Ciudad Real)",
+    periodo: "2009 - 2015",
+    descripcion: "Educación secundaria y bachillerato tecnológico.",
   },
 ];
 

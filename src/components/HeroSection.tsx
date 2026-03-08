@@ -26,9 +26,8 @@ const HeroSection = () => {
             Software Engineer
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10 animate-fade-up animation-delay-400">
-            Apasionado por crear experiencias digitales únicas y funcionales. 
-            Me especializo en el desarrollo web moderno, combinando diseño atractivo 
-            con código limpio y eficiente.
+            Desarrollador Backend con más de 5 años de experiencia en Java, microservicios y arquitecturas cloud. 
+            Especializado en desarrollo de sistemas escalables, APIs REST y tecnologías AWS, Docker y Kubernetes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up animation-delay-400">
             <a
