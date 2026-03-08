@@ -20,7 +20,7 @@ const translations = {
     
     // Hero
     "hero.greeting": "¡Hola! Soy",
-    "hero.role": "Software Engineer",
+    "hero.role": "Backend Software Engineer",
     "hero.description": "Desarrollador Backend con más de 5 años de experiencia en Java, Go, microservicios y arquitecturas cloud. Especializado en desarrollo de sistemas escalables, APIs REST y tecnologías AWS, Docker y Kubernetes.",
     "hero.experience": "Mi experiencia",
     "hero.contact": "Contactar",
@@ -100,7 +100,7 @@ const translations = {
     
     // Hero
     "hero.greeting": "Hi! I'm",
-    "hero.role": "Software Engineer",
+    "hero.role": "Backend Software Engineer",
     "hero.description": "Backend Developer with over 5 years of experience in Java, Go, microservices and cloud architectures. Specialized in scalable system development, REST APIs and AWS, Docker and Kubernetes technologies.",
     "hero.experience": "My experience",
     "hero.contact": "Contact me",
