@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/30" />
       
       {/* Code pattern background */}
-      <div className="absolute inset-0 opacity-[0.04] text-primary font-mono text-sm leading-relaxed overflow-hidden select-none pointer-events-none" aria-hidden="true">
+      <div className="absolute inset-0 opacity-[0.07] text-primary font-mono text-base leading-relaxed overflow-hidden select-none pointer-events-none" aria-hidden="true">
         <div className="absolute top-[5%] left-[3%] rotate-[-8deg]">{'const dev = () => {'}</div>
         <div className="absolute top-[12%] right-[8%] rotate-[5deg]">{'import React from "react";'}</div>
         <div className="absolute top-[22%] left-[15%] rotate-[3deg]">{'function buildApp() {'}</div>
@@ -26,9 +26,9 @@ const HeroSection = () => {
       </div>
 
       {/* Decorative glows */}
-      <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-primary/8 rounded-full blur-[100px]" />
-      <div className="absolute bottom-1/3 left-1/5 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/3 rounded-full blur-[150px]" />
+      <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-primary/10 rounded-full blur-[80px]" />
+      <div className="absolute bottom-1/3 left-[20%] w-96 h-96 bg-primary/8 rounded-full blur-[100px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
