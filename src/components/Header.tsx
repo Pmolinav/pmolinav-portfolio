@@ -113,6 +113,15 @@ const Header = () => {
               </a>
             ))}
             
+            {/* Theme Toggle */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
+              aria-label="Toggle theme"
+            >
+              {isDark ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
+
             {/* Language Toggle */}
             <button
               onClick={toggleLanguage}
