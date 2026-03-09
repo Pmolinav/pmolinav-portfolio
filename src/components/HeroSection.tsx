@@ -11,7 +11,7 @@ const HeroSection = () => {
     >
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/30" />
-      
+
       {/* Code pattern background */}
       <div className="absolute inset-0 opacity-[0.07] text-primary font-mono text-base leading-relaxed overflow-hidden select-none pointer-events-none" aria-hidden="true">
         <div className="absolute top-[5%] left-[3%] rotate-[-8deg]">{'const dev = () => {'}</div>
@@ -33,7 +33,7 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-14 max-w-5xl mx-auto">
-          
+
           {/* Photo - left on desktop, top on mobile */}
           <div className="shrink-0 order-first">
             <div className="w-28 h-28 md:w-48 md:h-48 rounded-full overflow-hidden ring-4 ring-primary/20 shadow-lg">

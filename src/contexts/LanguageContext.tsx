@@ -21,7 +21,7 @@ const translations = {
     // Hero
     "hero.greeting": "¡Hola! Soy",
     "hero.role": "Backend Software Engineer",
-    "hero.description": "Desarrollador Backend con más de 5 años de experiencia en Java, Go, microservicios y arquitecturas cloud. Especializado en desarrollo de sistemas escalables, APIs REST y tecnologías AWS, Docker y Kubernetes.",
+    "hero.description": "Desarrollador Backend con más de 6 años de experiencia. Especializado en desarrollo de aplicaciones escalables con microservicios, APIs REST, Java, Go, caching, paso de mensajes y contenerización.",
     "hero.experience": "Mi experiencia",
     "hero.contact": "Contactar",
     
@@ -49,7 +49,7 @@ const translations = {
     "work.orenes.position": "Desarrollador Backend",
     "work.orenes.company": "Orenes CORE (anteriormente R.Franco Digital)",
     "work.orenes.period": "Junio 2022 - Actualidad",
-    "work.orenes.description": "Desarrollo de un servidor de juegos basado en arquitectura de microservicios con Java 21 y API REST. Implementación de nuevas funcionalidades, integraciones con externos, pruebas de rendimiento, mejoras de escalabilidad, revisiones de código, testing continuo y soporte. Aplicación desplegada en AWS, contenerizada con Docker y Kubernetes, CI/CD con Jenkins.",
+    "work.orenes.description": "Desarrollo de un servidor de juegos basado en arquitectura de microservicios con Java 21, Golang 1.25 y API REST. Implementación de nuevas funcionalidades, integraciones con externos, pruebas de rendimiento, mejoras de escalabilidad, revisiones de código, testing continuo y soporte. Aplicación desplegada en AWS, contenerizada con Docker y Kubernetes, CI/CD con Jenkins.",
     "work.indra.position": "Desarrollador Java y .NET",
     "work.indra.company": "Indra",
     "work.indra.period": "Octubre 2019 - Junio 2022",
@@ -63,7 +63,7 @@ const translations = {
     "skills.title": "Habilidades",
     "skills.backend": "Backend",
     "skills.devops": "DevOps & Cloud",
-    "skills.tools": "Herramientas",
+    "skills.tools": "Herramientas & Testing",
     "skills.soft": "Soft Skills",
     "skills.soft.teamwork": "Trabajo en equipo",
     "skills.soft.clients": "Contacto con clientes",
@@ -73,6 +73,7 @@ const translations = {
     
     // Tech tags
     "tech.microservices": "Microservicios",
+    "tech.api.rest": "API REST",
     // Projects
     "projects.title": "Proyectos Personales",
     "projects.ecommerce.title": "E-Commerce Platform",
@@ -101,7 +102,7 @@ const translations = {
     // Hero
     "hero.greeting": "Hi! I'm",
     "hero.role": "Backend Software Engineer",
-    "hero.description": "Backend Developer with over 5 years of experience in Java, Go, microservices and cloud architectures. Specialized in scalable system development, REST APIs and AWS, Docker and Kubernetes technologies.",
+    "hero.description": "Backend Developer with over 6 years of experience. Specialized in scalable applications development with microservices, REST APIs, Java, Go, caching, message passing and containerization.",
     "hero.experience": "My experience",
     "hero.contact": "Contact me",
     
@@ -129,7 +130,7 @@ const translations = {
     "work.orenes.position": "Backend Developer",
     "work.orenes.company": "Orenes CORE (formerly R.Franco Digital)",
     "work.orenes.period": "June 2022 - Present",
-    "work.orenes.description": "Development of a game server based on microservices architecture with Java 21 and REST API. Implementation of new features, external integrations, performance testing, scalability improvements, code reviews, continuous testing and support. Application deployed on AWS, containerized with Docker and Kubernetes, CI/CD with Jenkins.",
+    "work.orenes.description": "Development of a game server based on microservices architecture with Java 21, Golang 1.25 and REST API. Implementation of new features, external integrations, performance testing, scalability improvements, code reviews, continuous testing and support. Application deployed on AWS, containerized with Docker and Kubernetes, CI/CD with Jenkins.",
     "work.indra.position": "Java and .NET Developer",
     "work.indra.company": "Indra",
     "work.indra.period": "October 2019 - June 2022",
@@ -143,7 +144,7 @@ const translations = {
     "skills.title": "Skills",
     "skills.backend": "Backend",
     "skills.devops": "DevOps & Cloud",
-    "skills.tools": "Tools",
+    "skills.tools": "Tools & Testing",
     "skills.soft": "Soft Skills",
     "skills.soft.teamwork": "Teamwork",
     "skills.soft.clients": "Client communication",
@@ -153,6 +154,7 @@ const translations = {
     
     // Tech tags
     "tech.microservices": "Microservices",
+    "tech.api.rest": "REST API",
     // Projects
     "projects.title": "Personal Projects",
     "projects.ecommerce.title": "E-Commerce Platform",

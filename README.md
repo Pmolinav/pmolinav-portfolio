@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# 🚀 Pablo Molina Villar | Backend Software Engineer
 
-## Project info
+¡Hola! Soy Pablo, un desarrollador Backend con más de **5 años de experiencia** especializado en la construcción de sistemas robustos y escalables. Me apasiona la arquitectura de microservicios, el desarrollo cloud y la resolución de problemas complejos a través de código limpio y eficiente.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+### 🛠️ Stack Tecnológico
 
-There are several ways of editing your application.
+| Categoría | Tecnologías |
+| :--- | :--- |
+| **Lenguajes** | Java 21, Go, .NET C#, PHP, C# (Unity) |
+| **Backend** | Microservicios, REST APIs, Spring Boot, EJBs, Hibernate |
+| **Mensajería & Caché** | Kafka, Redis |
+| **Cloud & DevOps** | AWS (EC2, S3, Redshift), Docker, Kubernetes, Jenkins, CI/CD |
+| **Monitorización** | ELK Stack (Elasticsearch, Logstash, Kibana), Grafana |
+| **Bases de Datos** | PostgreSQL, Oracle SQL, MySQL |
+| **Otras Herramientas** | Git, Scrum, Linux, Clean Architecture |
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### 💼 Resumen de Experiencia
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Orenes CORE** | *Backend Developer* (2022 - Actualidad)  
+  Desarrollo de servidores de juegos basados en microservicios con **Java 21**, Go y Kafka. Implementación de escalabilidad en **AWS** con Docker y Kubernetes.
+- **Indra** | *Java & .NET Developer* (2019 - 2022)  
+  Mantenimiento y desarrollo de aplicaciones de trading y sistemas financieros utilizando Java 8, AWS (Redshift, S3) y .NET Framework.
+- **UCLM** | *Desarrollo Android & Web* (2018 - 2019)  
+  Creación de aplicaciones móviles y gestión de servidores PHP/MySQL.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🎓 Formación Académica
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Grado en Ingeniería Informática** - Universidad de Castilla-La Mancha (UCLM)
+- **Máster en Profesorado (Tecnología e Informática)** - UCLM
+- **TFG:** Desarrollo de Serious Game con modalidad multijugador en Unity 3D (C#). Nota: 9.5.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🌐 Sobre este Proyecto (Portfolio)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Este repositorio contiene el código fuente de mi portfolio personal. Está diseñado para ser rápido, accesible y visualmente profesional, reflejando mi enfoque en la calidad del software.
 
-# Step 3: Install the necessary dependencies.
-npm i
+**Tecnologías principales:**
+- ⚛️ **React** + **TypeScript**
+- ⚡ **Vite**
+- 🎨 **Tailwind CSS** + **shadcn/ui**
+- 🌍 **Context API** para multi-idioma (ES/EN)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+### 💻 Instalación y Uso Local
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Si deseas explorar el proyecto localmente, sigue estos pasos:
 
-**Use GitHub Codespaces**
+1. **Clonar el repositorio:**
+   ```sh
+   git clone https://github.com/pmolinav/pmolinav-portfolio.git
+   ```
+2. **Instalar dependencias:**
+   ```sh
+   npm install
+   ```
+3. **Ejecutar en modo desarrollo:**
+   ```sh
+   npm run dev
+   ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+### 📫 ¡Conectemos!
 
-This project is built with:
+¿Tienes un proyecto interesante o quieres charlar sobre tecnología?  
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/pablo-molina-villar-52323a179)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/pmolinav)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pablo7molina97@gmail.com)
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+*Hecho con ❤️ por Pablo Molina Villar*

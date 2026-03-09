@@ -4,9 +4,9 @@ const HabilidadesSection = () => {
   const { t } = useLanguage();
 
   const habilidades = {
-    backend: ["Java", "Go", "API REST", t("tech.microservices"), ".NET C#", "Hibernate", "PostgreSQL", "Oracle SQL", "Redis"],
+    backend: ["Java", "Go", t("tech.api.rest"), t("tech.microservices"), ".NET C#", "Hibernate", "PostgreSQL", "Redis", "Caffeine", "Oracle SQL"],
     devops: ["Docker", "Kubernetes", "Jenkins", "AWS", "Kafka", "ELK", "Grafana", "Git"],
-    herramientas: ["Kibana", "Swagger", "Postman", "JMeter", "Jira", "Confluence"],
+    herramientas: ["Kibana", "Swagger", "JUnit", "Mockito", "TestContainers", "Gherkin", "Cucumber", "Postman", "JMeter", "Jira", "Confluence"],
     soft: [
       t("skills.soft.teamwork"),
       t("skills.soft.clients"),
@@ -20,7 +20,7 @@ const HabilidadesSection = () => {
     <section id="habilidades" className="py-20 md:py-32">
       <div className="container mx-auto px-6">
         <h2 className="section-title">{t("skills.title")}</h2>
-        
+
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-card p-6 md:p-8 rounded-xl card-hover">
             <h3 className="text-xl font-semibold text-foreground mb-6 flex items-center gap-3" style={{ fontFamily: "var(--font-display)" }}>
