@@ -93,8 +93,15 @@ const Header = () => {
     >
       <div className="container mx-auto px-6 py-4" ref={menuRef}>
         <div className="flex items-center justify-between">
-          <a href="#inicio" className="text-xl font-semibold text-gradient" style={{ fontFamily: "var(--font-display)" }}>
-            Portfolio
+          <a href="#inicio" className="flex items-center gap-3 group transition-transform hover:scale-105">
+            <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-secondary border border-primary/20 group-hover:border-primary/50 transition-all shadow-glow">
+              <span className="text-xl font-bold text-gradient" style={{ fontFamily: "var(--font-display)" }}>
+                PM
+              </span>
+            </div>
+            <span className="text-xl font-semibold text-gradient hidden sm:block" style={{ fontFamily: "var(--font-display)" }}>
+              Portfolio
+            </span>
           </a>
 
           {/* Desktop Navigation */}
